@@ -55,7 +55,8 @@ public class Diner {
 
     public double editTextToDouble(EditText et){
         double db = 0.0;
-        db = Double.parseDouble(et.getText().toString().replace("$", "").replace(",", ""));
+        db = Double.parseDouble(et.getText().toString().replace("$", "").replace(",", ""));// make a $ sign in the front of the total and make the total 2-decimal number
+    }
         return db;
     }
 
