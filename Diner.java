@@ -47,8 +47,7 @@ public class Diner {
                                                          // first we need to take the text from above, convert it to string
                                                          // then lastly into double
         }
-        tvSplitBill.setText("$" + String.format("%,.2f", total * (1 + tip))); // make a $ sign in the front of the total and make the total 2-decimal number
-    }
+        tvSplitBill.setText("$" + String.format("%,.2f", total * (1 + tip))); 
 
     public void updateTotal(double tip) {
         updateTotal(etFirstOrder, tip);
